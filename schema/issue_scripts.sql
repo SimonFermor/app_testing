@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `issue_scripts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `issue_id` int(11) DEFAULT NULL,
   `order_key` int(11) NOT NULL,
-  `script_id` int(11) DEFAULT NULL,
+  `script_version_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_unicode_ci;
 

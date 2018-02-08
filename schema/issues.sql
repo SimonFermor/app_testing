@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS `issues` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) COLLATE utf16_unicode_ci DEFAULT '0',
   `title` varchar(100) COLLATE utf16_unicode_ci DEFAULT '0',
+  `issued_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_unicode_ci;
 
