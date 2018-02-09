@@ -14,6 +14,7 @@
 CREATE TABLE IF NOT EXISTS `test_snippets` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `test_id` int(11) NOT NULL,
+  `order_key` int(11) NOT NULL,
   `snippet_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_unicode_ci;

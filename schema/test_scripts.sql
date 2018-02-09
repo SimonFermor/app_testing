@@ -13,8 +13,8 @@
 -- Dumping structure for table apps.test_scripts
 CREATE TABLE IF NOT EXISTS `test_scripts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `order_key` int(11) DEFAULT NULL,
   `test_id` int(11) DEFAULT NULL,
+  `order_key` int(11) DEFAULT NULL,
   `script_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_unicode_ci;

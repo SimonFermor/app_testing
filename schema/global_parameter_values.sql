@@ -10,12 +10,13 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table apps.feature_tests
-CREATE TABLE IF NOT EXISTS `feature_tests` (
+-- Dumping structure for table apps.global_parameter_values
+CREATE TABLE IF NOT EXISTS `global_parameter_values` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `feature_id` int(11) DEFAULT NULL,
-  `order_key` int(11) DEFAULT '1',
-  `test_id` int(11) DEFAULT NULL,
+  `parameter_id` int(11) DEFAULT NULL,
+  `is_default` bit(1) NOT NULL DEFAULT b'0',
+  `description` varchar(50) COLLATE utf16_unicode_ci NOT NULL,
+  `value` varchar(50) COLLATE utf16_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_unicode_ci;
 

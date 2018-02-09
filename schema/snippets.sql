@@ -13,8 +13,8 @@
 -- Dumping structure for table apps.snippets
 CREATE TABLE IF NOT EXISTS `snippets` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `folder` varchar(200) COLLATE utf16_unicode_ci DEFAULT NULL,
-  `filename` varchar(50) COLLATE utf16_unicode_ci DEFAULT NULL,
+  `source_folder` varchar(200) COLLATE utf16_unicode_ci DEFAULT NULL,
+  `source_filename` varchar(50) COLLATE utf16_unicode_ci DEFAULT NULL,
   `snippet` longtext COLLATE utf16_unicode_ci,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
