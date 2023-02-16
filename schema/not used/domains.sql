@@ -11,14 +11,12 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table apps.test_checks
-CREATE TABLE IF NOT EXISTS `test_checks` (
+-- Dumping structure for table apps.domains
+CREATE TABLE IF NOT EXISTS `domains` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `test_id` int(11) DEFAULT NULL,
-  `order_key` int(11) DEFAULT '0',
-  `check` varchar(200) COLLATE utf16_unicode_ci DEFAULT NULL,
+  `name` varchar(50) COLLATE utf16_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=90 DEFAULT CHARSET=utf16 COLLATE=utf16_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_unicode_ci;
 
 -- Data exporting was unselected.
 
